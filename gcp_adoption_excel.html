@@ -21,19 +21,6 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        .export-btn {
-            background-color: #34a853;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        .export-btn:hover {
-            background-color: #2d8f47;
-        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -94,7 +81,30 @@
     <div class="container">
         <h1>Google Cloud Adoption Framework - Roadmap 180 Dias</h1>
         
-        <button class="export-btn" onclick="exportToCSV()">📊 Exportar para CSV</button>
+        <!-- Introdução -->
+        <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #1a73e8;">
+            <h2 style="color: #1a73e8; margin-bottom: 15px;">📋 Introdução</h2>
+            <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
+                Este roadmap apresenta um plano estruturado de 180 dias para adoção do Google Cloud Platform (GCP), 
+                baseado no <strong>Google Cloud Adoption Framework</strong> oficial. O framework organiza a jornada 
+                de transformação em quatro domínios principais: <strong>Learn</strong>, <strong>Lead</strong>, 
+                <strong>Scale</strong> e <strong>Secure</strong>.
+            </p>
+            <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
+                A metodologia está estruturada em três fases de maturidade:
+            </p>
+            <ul style="font-size: 16px; line-height: 1.8; margin-left: 20px;">
+                <li><strong>Tactical (30 dias):</strong> Estabelecimento das fundações básicas</li>
+                <li><strong>Strategic (60-90 dias):</strong> Implementação e consolidação de processos</li>
+                <li><strong>Transformational (180 dias):</strong> Operação autônoma e inovação contínua</li>
+            </ul>
+            <p style="font-size: 14px; color: #666; margin-top: 15px; font-style: italic;">
+                <strong>Referência:</strong> Google Cloud Adoption Framework - 
+                <a href="https://cloud.google.com/adoption-framework" target="_blank" style="color: #1a73e8;">
+                    https://cloud.google.com/adoption-framework
+                </a>
+            </p>
+        </div>
         
         <div class="table-container">
             <table id="roadmapTable">
@@ -2267,42 +2277,6 @@
             });
         });
         
-        function exportToCSV() {
-            const table = document.getElementById('roadmapTable');
-            const rows = Array.from(table.rows);
-            
-            let csvContent = '';
-            
-            rows.forEach(row => {
-                const cols = Array.from(row.cells);
-                const rowData = cols.map(col => {
-                    // Remove quebras de linha e aspas duplas, envolve em aspas se contém vírgula
-                    let cellData = col.textContent.replace(/\n/g, ' ').replace(/"/g, '""');
-                    if (cellData.includes(',') || cellData.includes('"')) {
-                        cellData = '"' + cellData + '"';
-                    }
-                    return cellData;
-                });
-                csvContent += rowData.join(',') + '\n';
-            });
-            
-            // Criar blob e download
-            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-            const link = document.createElement('a');
-            
-            if (navigator.msSaveBlob) {
-                // IE 10+
-                navigator.msSaveBlob(blob, 'gcp-adoption-roadmap.csv');
-            } else {
-                // Outros browsers
-                link.href = URL.createObjectURL(blob);
-                link.download = 'gcp-adoption-roadmap.csv';
-                link.style.visibility = 'hidden';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-        }
         
         // Adicionar funcionalidade de ordenação
         document.addEventListener('DOMContentLoaded', function() {
