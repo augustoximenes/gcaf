@@ -82,27 +82,129 @@
         <h1>Google Cloud Adoption Framework - Roadmap 180 Dias</h1>
         
         <!-- Introdução -->
-        <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #1a73e8;">
-            <h2 style="color: #1a73e8; margin-bottom: 15px;">📋 Introdução</h2>
-            <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
-                Este roadmap apresenta um plano estruturado de 180 dias para adoção do Google Cloud Platform (GCP), 
-                baseado no <strong>Google Cloud Adoption Framework</strong> oficial. O framework organiza a jornada 
-                de transformação em quatro domínios principais: <strong>Learn</strong>, <strong>Lead</strong>, 
-                <strong>Scale</strong> e <strong>Secure</strong>.
+        <div style="background-color: #f8f9fa; padding: 25px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #1a73e8;">
+            <h2 style="color: #1a73e8; margin-bottom: 20px;">📋 Google Cloud Adoption Framework</h2>
+            
+            <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+                Este roadmap apresenta um plano estruturado de 180 dias para adoção do Google Cloud Platform, 
+                baseado no <strong>Google Cloud Adoption Framework (GCAF)</strong> oficial. O framework foi 
+                desenvolvido para avaliar a maturidade organizacional na jornada para a nuvem e fornecer estratégias 
+                estruturadas para uma transformação digital bem-sucedida.
             </p>
-            <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
-                A metodologia está estruturada em três fases de maturidade:
-            </p>
-            <ul style="font-size: 16px; line-height: 1.8; margin-left: 20px;">
-                <li><strong>Tactical (30 dias):</strong> Estabelecimento das fundações básicas</li>
-                <li><strong>Strategic (60-120 dias):</strong> Implementação e consolidação de processos</li>
-                <li><strong>Transformational (180 dias):</strong> Operação autônoma e inovação contínua</li>
-            </ul>
-            <p style="font-size: 14px; color: #666; margin-top: 15px; font-style: italic;">
-                <strong>Referência:</strong> Google Cloud Adoption Framework - 
-                <a href="https://cloud.google.com/adoption-framework" target="_blank" style="color: #1a73e8;">
-                    https://cloud.google.com/adoption-framework
-                </a>
+
+            <!-- Domínios -->
+            <div style="margin-bottom: 25px;">
+                <h3 style="color: #333; margin-bottom: 15px;">
+                    🎯 Quatro Domínios Fundamentais
+                </h3>
+                <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+                    <div style="flex: 0 0 300px;">
+                        <img src="images/domains.png" alt="Domínios GCAF" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                            <div style="background: linear-gradient(135deg, #e8f5e8, #f0fff0); padding: 15px; border-radius: 8px; border-left: 4px solid #34a853;">
+                                <strong style="color: #34a853;">🎓 Learn (Aprender)</strong><br>
+                                <span style="font-size: 14px;">Capacidade de qualificar equipes e complementar competências com parceiros especializados</span>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #fff8e1, #fffbf0); padding: 15px; border-radius: 8px; border-left: 4px solid #fbbc04;">
+                                <strong style="color: #f57c00;">👥 Lead (Liderar)</strong><br>
+                                <span style="font-size: 14px;">Obtenção de mandatos executivos e desenvolvimento de equipes multifuncionais e autônomas</span>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #e3f2fd, #f0f8ff); padding: 15px; border-radius: 8px; border-left: 4px solid #4285f4;">
+                                <strong style="color: #1976d2;">📈 Scale (Escalar)</strong><br>
+                                <span style="font-size: 14px;">Capacidade de usar serviços em nuvem para reduzir overhead administrativo e automatizar processos</span>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #ffebee, #fff5f5); padding: 15px; border-radius: 8px; border-left: 4px solid #ea4335;">
+                                <strong style="color: #d32f2f;">🔒 Secure (Proteger)</strong><br>
+                                <span style="font-size: 14px;">Implementação de estratégia de segurança multicamada e centrada em identidade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fases de Maturidade -->
+            <div style="margin-bottom: 25px;">
+                <h3 style="color: #333; margin-bottom: 15px;">
+                    📊 Três Fases de Maturidade
+                </h3>
+                <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+                    <div style="flex: 0 0 300px; min-width: 250px;">
+                        <img src="images/phases.png" alt="Fases GCAF" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="background: linear-gradient(90deg, #e8f5e8, #f8f9fa); padding: 15px; border-radius: 8px; border-left: 5px solid #34a853;">
+                                <strong style="color: #2e7d32;">1️⃣ Tactical (30 dias)</strong> - Otimização de custos com retorno rápido e mínima disrupção. 
+                                Foco em redução de custos e migração rápida com trabalho ad-hoc.
+                            </div>
+                            <div style="background: linear-gradient(90deg, #e8f0ff, #f8f9fa); padding: 15px; border-radius: 8px; border-left: 5px solid #1976d2;">
+                                <strong style="color: #1976d2;">2️⃣ Strategic (60-120 dias)</strong> - Aumento do valor entregue pela TI através de operações eficientes. 
+                                Visão ampla com foco em inovação e desenvolvimento de negócio.
+                            </div>
+                            <div style="background: linear-gradient(90deg, #fff3e0, #f8f9fa); padding: 15px; border-radius: 8px; border-left: 5px solid #f57c00;">
+                                <strong style="color: #ef6c00;">3️⃣ Transformational (150-180 dias)</strong> - TI como motor de inovação que impulsiona a transformação do negócio. 
+                                Operações em nuvem funcionando de forma autônoma.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Épicos -->
+            <div style="margin-bottom: 25px;">
+                <h3 style="color: #333; margin-bottom: 15px;">
+                    🚀 Estrutura em Épicos
+                </h3>
+                <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+                    <div style="flex: 0 0 300px; min-width: 250px;">
+                        <img src="images/epics.png" alt="Épicos GCAF" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="flex: 1;">
+                        <p style="font-size: 15px; line-height: 1.6; background-color: #f0f7ff; padding: 15px; border-radius: 8px; margin: 0;">
+                            Os <strong>épicos</strong> são fluxos de trabalho claramente definidos e não sobrepostos, alinhados aos quatro domínios. 
+                            Cada épico pode ser dividido em histórias de usuário específicas, permitindo gerenciamento ágil e entrega incremental 
+                            de valor ao longo da jornada de transformação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avaliação de Maturidade -->
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #333; margin-bottom: 15px;">
+                    📋 Avaliação de Maturidade
+                </h3>
+                <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+                    <div style="flex: 0 0 300px; min-width: 250px;">
+                        <img src="images/maturity.png" alt="Avaliação de Maturidade" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="background: linear-gradient(135deg, #f3e5f5, #faf8ff); padding: 18px; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                            <p style="font-size: 15px; line-height: 1.6; margin: 0;">
+                                A <strong>Escala de Maturidade em Nuvem</strong> combina os quatro domínios com as três fases, 
+                                fornecendo uma ferramenta poderosa para avaliar o estado atual e planejar a evolução organizacional. 
+                                Esta avaliação orienta a priorização de programas de treinamento, parcerias estratégicas, 
+                                modelo operacional e configuração de segurança.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: #e8f5e8; padding: 15px; border-radius: 8px; border-left: 4px solid #2e7d32;">
+                <p style="font-size: 14px; margin: 0; color: #2e7d32;">
+                    <strong>💡 Objetivo Executivo:</strong> Este roadmap traduz o framework conceitual em um plano executável 
+                    de 180 dias, com atividades específicas, marcos mensuráveis e métricas de sucesso que garantem uma 
+                    transformação digital estruturada e de baixo risco.
+                </p>
+            </div>
+
+            <p style="font-size: 14px; color: #666; margin-top: 20px; font-style: italic;">
+                <strong>📚 Referências:</strong> 
+                <a href="https://cloud.google.com/adoption-framework" target="_blank" style="color: #1a73e8;">Google Cloud Adoption Framework</a> | 
+                <a href="https://services.google.com/fh/files/misc/google_cloud_adoption_framework_whitepaper.pdf" target="_blank" style="color: #1a73e8;">Whitepaper Oficial</a>
             </p>
         </div>
         
